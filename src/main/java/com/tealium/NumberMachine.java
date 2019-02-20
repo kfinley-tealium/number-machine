@@ -2,6 +2,7 @@ package com.tealium;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Random;
 
 public class NumberMachine {
 
@@ -24,5 +25,9 @@ public class NumberMachine {
 
 		factors.sort(Integer::compareTo);
 		return factors;
+	}
+
+	public long generateRandom() {
+		return new Random().nextLong();
 	}
 }
