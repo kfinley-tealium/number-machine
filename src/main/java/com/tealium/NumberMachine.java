@@ -30,4 +30,12 @@ public class NumberMachine {
 	public long generateRandom() {
 		return new Random().nextLong();
 	}
+
+	public long multiply(int x, int y){
+		return x * y;
+	}
+
+	public long divide(int x, int y, int z){
+		return x / y;
+	}
 }
