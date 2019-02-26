@@ -1,6 +1,7 @@
 package com.tealium;
 
 import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 
 import java.util.Arrays;
@@ -20,7 +21,7 @@ public class NumberMachineTest {
 
 	@Test
 	public void getFactors() {
-		 List<Integer> factors = machine.getFactors(0);
+		List<Integer> factors = machine.getFactors(0);
 		assertThat(factors, is(Arrays.asList(0)));
 
 		factors = machine.getFactors(1);
@@ -35,5 +36,11 @@ public class NumberMachineTest {
 		factors = machine.getFactors(4);
 		assertThat(factors, is(Arrays.asList(1, 2, 4)));
 
+	}
+
+	@Test
+	public void multiply() {
+		assertEquals(1, machine.multiply(1, 1));
+		assertEquals(4, machine.multiply(2, 2));
 	}
 }
