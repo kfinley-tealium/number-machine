@@ -43,4 +43,10 @@ public class NumberMachineTest {
 		assertEquals(1, machine.multiply(1, 1));
 		assertEquals(4, machine.multiply(2, 2));
 	}
+
+	@Test
+	public void add() {
+		assertEquals(2, machine.add(1, 1));
+		assertEquals(5, machine.add(2, 3));
+	}
 }
