@@ -38,4 +38,8 @@ public class NumberMachine {
 	public long divide(int x, int y, int z){
 		return x / y;
 	}
+
+	public long add(int x, int y, int z){
+		return x + y;
+	}
 }
