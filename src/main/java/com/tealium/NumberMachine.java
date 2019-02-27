@@ -39,7 +39,7 @@ public class NumberMachine {
 		return x / y;
 	}
 
-	public long add(int x, int y, int z){
+	public long add(int x, int y){
 		return x + y;
 	}
 }
